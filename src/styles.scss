@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.myborder-gradient {
+   
+    position: relative;
+    background: linear-gradient(to right, #0029FF, #1AC8FA);
+    padding: 3px;
+  } 
+  
+$colors: (
+  "blue": #0029FF,
+  "light-blue": #1AC8FA,
+  
+) !default;
+
+
+
+@import 'bootstrap/scss/bootstrap';
+
+@font-face {
+    font-family: "Univers LT Std";
+    src: local("Univers LT Std"), url(./assets/fonts/UniversLTStd-Bold.otf) format("truetype");
+}
