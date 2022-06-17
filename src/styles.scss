@@ -2,7 +2,6 @@
 
 
 .myborder-gradient {
-   
     background: linear-gradient(to right, #0029FF, #1AC8FA);
     padding: 3px;
   } 
@@ -20,4 +19,8 @@ $colors: (
 @font-face {
     font-family: "Univers LT Std";
     src: local("Univers LT Std"), url(./assets/fonts/UniversLTStd-Bold.otf) format("truetype");
+}
+@font-face {
+  font-family: "Univers LT Std Roman";
+  src: local("Univers LT Std"), url(./assets/fonts/Univers-LT-Std-55-Roman_46338.ttf) format("truetype");
 }

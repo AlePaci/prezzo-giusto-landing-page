@@ -41,17 +41,19 @@
     border: 0.610262px solid #000000;
     border-radius: 6.10262px;
     
-
+    font-family: 'Univers LT Std Roman';
+    font-style: normal;
     font-weight: 400;
     font-size: 15.2565px;
     line-height: 18px;
-    
     color: #A7A6A6;
     }
     @media (min-width: 700px) {
         .input-size{
+            float: right;
             width: 597.45px;
             height: 95.55px;
+            
             border: 1.05px solid #000000;
             border-radius: 10.5px;
 
@@ -62,9 +64,35 @@
     }
 
 
-.radio-style{
-    font-weight: 400;
-    font-size: 16.8px;
-    line-height: 20px;
+.checkbox-style{
+    box-sizing: border-box;
+    width: 19.49px;
+    height: 19.83px;
+    background: #FFFFFF;
+    border: 0.619617px solid #000000;
+    border-radius: 6.19616px;
+    }
+    @media (min-width: 700px) {
+        .checkbox-style{
+            width: 33.02px;
+            height: 33.6px;
+            border: 1.05px solid #000000;
+            border-radius: 8.5px;
+        }
+    }
+
+.checkbox-text{
+    font-family: 'Univers LT Std Roman';
+    font-style: normal;
+    font-weight: 250;
+    font-size: 9.91386px;
+    line-height: 12px;
     color: #FFFFFF;
-}
+    }
+    @media (min-width: 700px) {
+        .checkbox-text{
+            font-size: 16.8px;
+            line-height: 20px;
+        }
+    }
+

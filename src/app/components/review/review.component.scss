@@ -1,20 +1,43 @@
 .border-size{
-    width: 1572px;
-    height: 265px;
-    border-radius: 30px;
-}
+    margin: auto;
+    width: 391px;
+    height: 187px;
+    border-radius: 9.80843px;
+    
+    }
+    @media (min-width: 700px) { 
+        .border-size{
+            width: 1578px;
+            height: 270px;
+            border-radius: 30px;
+        }
+     }
 .general{
-   
-    width: 1566px;
-    height: 259px;
-
-    border-radius: 30px;
+    margin-top: 1.2px;
+    margin-left: 1.2px;
+    width: 384px;
+    height: 180px;
+    border-radius: 9.80843px;
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 400;
-    font-size: 39.3996px;
+    font-size: 18.9523px;
+    line-height: 22px;
+    ;
     color: #000000
     }
+    @media (min-width: 700px) { 
+        .general{
+            margin-top: 3.7px;
+            margin-left: 3.7px;
+            width: 1566px;
+            height: 259px;
+            border-radius: 30px;
+            font-size: 39.3996px;
+            line-height: 45px;
+        }
+     }
+
 
 .eccezionale{
     position: absolute;
@@ -59,10 +82,15 @@ text-align: center;
 }
 
 .end{
-  
-    font-size: 27.0919px;
-    line-height: 31px; 
-}
+    font-size: 8.95901px;
+    line-height: 10px;
+    }
+    @media (min-width: 700px) { 
+        .end{
+            font-size: 27.0919px;
+            line-height: 31px; 
+        }
+     }
 
 #star-five-green {
     margin: 5px 0;
@@ -103,5 +131,58 @@ text-align: center;
     transform: rotate(-70deg);
     content: '';
   }
+
+  .star-five-white {
+    margin: 5px 0;
+    position: relative;
+    display: block;
+    color: #FFFFFF;
+    width: 0px;
+    height: 0px;
+    border-right: 12.5px solid transparent;
+    border-bottom: 8.5px solid #FFFFFF;
+    border-left: 12.5px solid transparent;
+    transform: rotate(35deg);
+  }
+  .star-five-white:before {
+    border-bottom: 10px solid #FFFFFF;
+    border-left: 3.7px solid transparent;
+    border-right: 3.7px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -5.7px;
+    left: -8.1px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  .star-five-white:after {
+    position: absolute;
+    display: block;
+    color: #FFFFFF;
+    top: 0.35px;
+    left: -13.1px;
+    width: 0px;
+    height: 0px;
+    border-right: 12.5px solid transparent;
+    border-bottom: 8.5px solid #FFFFFF;
+    border-left: 12.5px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+  .square{
+   margin-left: 2px;
+    width: 37.42px;
+    height: 37.42px;
+    background: #1FB584;
+  }
+  @media (min-width: 700px) { 
+    .square{
+        margin-left: 4px;
+        width: 78.57px;
+        height: 78.57px;
+    }
+ }
 
 
