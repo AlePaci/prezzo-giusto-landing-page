@@ -1,0 +1,70 @@
+.form-font{
+    font-family: 'Univers LT Std';
+    font-style: normal;
+}
+
+.bt-size{
+    width: 349px;
+    height: 54.85px;
+    background-color: #1AC8FA;
+    box-shadow: 0px 2.41105px 2.41105px rgba(0, 0, 0, 0.25);
+    border-radius: 6.02763px;
+    
+
+    font-size: 27.1244px;
+    line-height: 33px;
+    font-weight: 700;
+    text-shadow: 0px 2.29624px 2.29624px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: #FFFFFF;
+    
+    }
+    @media (min-width: 700px) {
+        .bt-size{
+            width: 607.95px;
+            height: 95.55px;
+            box-shadow: 0px 4.2px 4.2px rgba(0, 0, 0, 0.25);
+            border-radius: 10.5px;
+
+            font-size: 47.25px;
+            line-height: 57px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+
+.input-size{
+    box-sizing: border-box;
+    width: 347.24px;
+    height: 55.53px;
+    background: #FFFFFF;
+    border: 0.610262px solid #000000;
+    border-radius: 6.10262px;
+    
+
+    font-weight: 400;
+    font-size: 15.2565px;
+    line-height: 18px;
+    
+    color: #A7A6A6;
+    }
+    @media (min-width: 700px) {
+        .input-size{
+            width: 597.45px;
+            height: 95.55px;
+            border: 1.05px solid #000000;
+            border-radius: 10.5px;
+
+            font-size: 26.25px;
+            line-height: 31px;
+            
+        }
+    }
+
+
+.radio-style{
+    font-weight: 400;
+    font-size: 16.8px;
+    line-height: 20px;
+    color: #FFFFFF;
+}

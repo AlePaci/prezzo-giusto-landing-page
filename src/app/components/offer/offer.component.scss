@@ -1,17 +1,41 @@
 .offer{
+    margin-top: 57px;
     font-family: 'Univers LT Std';
     font-style: normal;
     font-weight: 700;
-    font-size: 70px;
-    line-height: 84px;
+    font-size: 27.0504px;
+    line-height: 32px;
+    text-shadow: 0px 4.71px 23.55px rgba(0, 0, 0, 0.25);
+    }
+    @media (min-width: 700px) {
+        .offer{
+        margin-top: 96px;
+        font-size: 70px;
+        line-height: 84px;
+        }
 }
+
 .white{
-   
-    text-shadow: 0 0 3px #00532C;
+    -webkit-text-stroke: 1.1593px #00532C;
     color: #FFFFFF;
+    }
+    @media (min-width: 700px) {
+        .white{
+            -webkit-text-stroke: 3px #00532C;
+        }
     }
     
 .green{
-    text-shadow: 0 0 3px #FFFFFF;
+    -webkit-text-stroke: 1.1593px #FFFFFC;
     color: #00532C;
     }
+    @media (min-width: 700px) {
+        .green{
+            -webkit-text-stroke: 3px #FFFFFC;
+        }
+    }
+
+   
+
+
+
