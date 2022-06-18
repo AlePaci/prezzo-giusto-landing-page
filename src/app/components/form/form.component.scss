@@ -1,16 +1,32 @@
 .form-font{
+   
+    margin-top: 20px;
     font-family: 'Univers LT Std';
     font-style: normal;
-}
+    }
+    @media (min-width: 700px) {
+        .form-font{
+            margin-top: 50px;
+        }
+    }
+
+    .input-box{
+        margin: auto;
+        width: 347.24px;
+        height: 99.5px;
+    }
+
+
 
 .bt-size{
+    margin: auto;
+    margin-top: 15px;
     width: 349px;
     height: 54.85px;
     background-color: #1AC8FA;
     box-shadow: 0px 2.41105px 2.41105px rgba(0, 0, 0, 0.25);
     border-radius: 6.02763px;
     
-
     font-size: 27.1244px;
     line-height: 33px;
     font-weight: 700;
@@ -34,7 +50,6 @@
 
 
 .input-size{
-    box-sizing: border-box;
     width: 347.24px;
     height: 55.53px;
     background: #FFFFFF;
@@ -50,7 +65,7 @@
     }
     @media (min-width: 700px) {
         .input-size{
-            float: right;
+            float:right;
             width: 597.45px;
             height: 95.55px;
             
@@ -65,7 +80,6 @@
 
 
 .checkbox-style{
-    box-sizing: border-box;
     width: 19.49px;
     height: 19.83px;
     background: #FFFFFF;

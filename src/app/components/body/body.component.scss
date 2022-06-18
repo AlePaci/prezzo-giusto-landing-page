@@ -3,3 +3,29 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+.wifi{
+  margin: auto;
+  width: 69.17px;
+  height: 69.17px;
+  }
+  @media (min-width: 700px) { 
+    .wifi{
+      width: 117px;
+      height: 117px;
+    }
+ }
+
+.text{
+  
+  font-family: 'Univers LT Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.08em;
+  
+  color: #FFFFFF;
+}
+
+

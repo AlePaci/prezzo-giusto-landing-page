@@ -1,4 +1,5 @@
 .border-size{
+    position: relative;
     margin: auto;
     width: 391px;
     height: 187px;
@@ -13,8 +14,9 @@
         }
      }
 .general{
-    margin-top: 1.2px;
-    margin-left: 1.2px;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 3px;
     width: 384px;
     height: 180px;
     border-radius: 9.80843px;
@@ -28,8 +30,8 @@
     }
     @media (min-width: 700px) { 
         .general{
-            margin-top: 3.7px;
-            margin-left: 3.7px;
+            margin-top: 5.7px;
+            margin-left: 6.7px;
             width: 1566px;
             height: 259px;
             border-radius: 30px;
@@ -92,7 +94,7 @@ text-align: center;
         }
      }
 
-#star-five-green {
+#star-green {
     margin: 5px 0;
     position: relative;
     display: block;
@@ -104,7 +106,7 @@ text-align: center;
     border-left: 12.5px solid transparent;
     transform: rotate(35deg);
   }
-  #star-five-green:before {
+  #star-green:before {
     border-bottom: 10px solid #1FB584;
     border-left: 3.7px solid transparent;
     border-right: 3.7px solid transparent;
@@ -117,7 +119,7 @@ text-align: center;
     content: '';
     transform: rotate(-35deg);
   }
-  #star-five-green:after {
+  #star-green:after {
     position: absolute;
     display: block;
     color: #1FB584;
@@ -132,8 +134,8 @@ text-align: center;
     content: '';
   }
 
-  .star-five-white {
-    margin: 5px 0;
+  .star-white {
+    margin: 15px 7px;
     position: relative;
     display: block;
     color: #FFFFFF;
@@ -143,8 +145,8 @@ text-align: center;
     border-bottom: 8.5px solid #FFFFFF;
     border-left: 12.5px solid transparent;
     transform: rotate(35deg);
-  }
-  .star-five-white:before {
+    }
+  .star-white:before {
     border-bottom: 10px solid #FFFFFF;
     border-left: 3.7px solid transparent;
     border-right: 3.7px solid transparent;
@@ -156,8 +158,8 @@ text-align: center;
     display: block;
     content: '';
     transform: rotate(-35deg);
-  }
-  .star-five-white:after {
+    }
+  .star-white:after {
     position: absolute;
     display: block;
     color: #FFFFFF;
@@ -170,7 +172,32 @@ text-align: center;
     border-left: 12.5px solid transparent;
     transform: rotate(-70deg);
     content: '';
-  }
+    }
+    @media (min-width: 700px) { 
+        .star-white {
+            margin: 27px 7px;
+            border-right: 33.33px solid transparent;
+            border-bottom: 23.33px solid #FFFFFF;
+            border-left: 33.33px solid transparent;
+            }
+          .star-white:before {
+            border-bottom: 26.66px solid #FFFFFF;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            top: -15px;
+            left: -21.66px;
+            }
+          .star-white:after {
+            top: 1px;
+            left: -35px;
+            width: 0px;
+            height: 0px;
+            border-right: 33.33px solid transparent;
+            border-bottom: 23.33px solid #FFFFFF;
+            border-left: 33.33px solid transparent;
+            }
+        }
+       
   .square{
    margin-left: 2px;
     width: 37.42px;

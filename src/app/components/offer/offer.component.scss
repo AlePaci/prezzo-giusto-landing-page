@@ -35,6 +35,19 @@
         }
     }
 
+
+    .text-box{
+        margin: auto;
+        width: 364px;
+        height: 76px;
+    }
+    @media (min-width: 700px) {
+        .text-box{
+            width: 1196px;
+            height: 124.26px;
+        }
+    }
+
    
 
 
