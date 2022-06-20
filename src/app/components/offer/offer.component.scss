@@ -48,6 +48,20 @@
         }
     }
 
+    
+    .secondary-text-box{
+        margin: auto;
+        width: 350px;
+    }
+    @media (min-width: 700px) {
+        .secondary-text-box{
+            width: 1300px;
+        }
+    }
+
+
+   
+
    
 
 

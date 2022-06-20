@@ -1,0 +1,28 @@
+.text-box{
+    margin-top: 40px;
+}
+
+.text-size{
+    margin: auto;
+    width: 349px;
+    height: 75px;
+
+    font-family: 'Univers LT Std Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(31, 31, 31, 0.79);
+    }
+    @media (min-width: 700px) { 
+        .text-size{
+            width: 1240px;
+            height: 75px;
+            font-size: 27px;
+            line-height: 32px;
+        }
+     }
+    
+
+

@@ -13,8 +13,14 @@
     .input-box{
         margin: auto;
         width: 347.24px;
-        height: 99.5px;
-    }
+        height: 161.5px;
+        }
+        @media (min-width: 700px) {
+            .input-box{
+                width: 1218px;
+                height: 174.3px;
+            }
+        }
 
 
 
@@ -37,6 +43,7 @@
     }
     @media (min-width: 700px) {
         .bt-size{
+            margin-top: 0px;
             width: 607.95px;
             height: 95.55px;
             box-shadow: 0px 4.2px 4.2px rgba(0, 0, 0, 0.25);

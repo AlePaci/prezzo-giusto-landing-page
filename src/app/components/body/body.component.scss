@@ -6,6 +6,7 @@
 
 .wifi{
   margin: auto;
+  margin-top: 30px;
   width: 69.17px;
   height: 69.17px;
   }
@@ -26,6 +27,16 @@
   letter-spacing: 0.08em;
   
   color: #FFFFFF;
-}
+  }
+  @media (min-width: 700px) { 
+    .text{
+      font-size: 42.61px;
+      line-height: 51px; 
+      color: #1FB584;
+    
+      -webkit-text-stroke: 2.5px #FFFFFF;
+      
+    }
+ }
 
 
