@@ -8,6 +8,7 @@ import { FormGroup,FormControl, NgForm } from '@angular/forms';
 })
 export class FormComponent implements OnInit {
 
+  number: string ="";
 
   constructor() { 
  
@@ -20,6 +21,7 @@ export class FormComponent implements OnInit {
   }
   save(data:NgForm){
     console.log(data.value)
+    this.number = data.value.number;
 
   }
 

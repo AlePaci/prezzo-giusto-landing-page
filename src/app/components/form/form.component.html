@@ -1,13 +1,13 @@
 <form class="form-font row  input-box " #phoneNumber="ngForm" (ngSubmit)="save(phoneNumber)">
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-lg-6">
         <div class="row">
             <div class="ps-0">
-                <input class="input-size text-center input-box" type="text" name="number" placeholder="Inserisci il tuo numero di cellulare" ngModel>
+                <input class="input-size text-center input-box" type="text" name="number" placeholder="Inserisci il tuo numero di cellulare" ngModel required>
             </div>
             <div class="ps-0 mt-1">
                 <div class="row">
                     <div class="col-1 ">     
-                       <input class="checkbox-style align-self-top" type="checkbox" id="consenso" name="consenso" value="consenso">
+                       <input class="checkbox-style align-self-top" type="checkbox" id="consenso" name="consenso" value="consenso" ngModel required>
                     </div>
                     <div class="col-11 ps-0">
                         <label class="checkbox-text ms-2 " for="consenso">Richiedendo il servizio confermo di aver letto e accettato i Termini<br>
@@ -18,5 +18,24 @@
             </div>
     </div>
 </div>
-    <input class="bt-size " type="submit" value="TI CHIAMIAMO NOI">
+    <input class="bt-size " type="submit" value="TI CHIAMIAMO NOI"  data-bs-toggle="modal" data-bs-target="#exampleModal" [disabled]="!phoneNumber.form.valid">
 </form>
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Verrai contattato al numero:</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         {{this.number}}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
