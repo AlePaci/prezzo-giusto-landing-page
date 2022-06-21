@@ -11,6 +11,8 @@ import { BodyComponent } from './components/body/body.component';
 import { ReviewComponent } from './components/review/review.component';
 import { OfferComponent } from './components/offer/offer.component';
 import { FormComponent } from './components/form/form.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { FormComponent } from './components/form/form.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

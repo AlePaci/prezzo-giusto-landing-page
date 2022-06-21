@@ -1,5 +1,8 @@
 import { Component, NgModule, OnInit } from '@angular/core';
 import { FormGroup,FormControl, NgForm } from '@angular/forms';
+import * as bootstrap from 'bootstrap';
+import { ValidationApiService } from 'src/app/service/validation-api.service';
+
 
 @Component({
   selector: 'app-form',
@@ -9,8 +12,10 @@ import { FormGroup,FormControl, NgForm } from '@angular/forms';
 export class FormComponent implements OnInit {
 
   number: string ="";
+  showModal:boolean = false;
 
-  constructor() { 
+  constructor(private validationService: ValidationApiService,
+    ) { 
  
   }
 
@@ -20,8 +25,18 @@ export class FormComponent implements OnInit {
 
   }
   save(data:NgForm){
-    console.log(data.value)
-    this.number = data.value.number;
+    console.log(data.value);
+    this.validationService.getValidtion(data.value.number).subscribe({
+      next: (res)=> {
+        console.log(res);
+        if(res.valid){
+           this.number = data.value.number;
+           console.log(this.showModal)
+        }
+      }
+    })
+    
+   
 
   }
 
